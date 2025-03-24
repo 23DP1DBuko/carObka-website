@@ -1,13 +1,35 @@
+
+/* fonti */
 .alata-regular {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 header {
     background-image: url(../images/banner.svg)
 }
+#hero {
+    font-family: "Audiowide", sans-serif;
+}
 body {
     font-family: "Alata", sans-serif;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    gap:20px;
+    display: flex;
+    align-items: center;
+    
 }
 section {
     height: 800px;
