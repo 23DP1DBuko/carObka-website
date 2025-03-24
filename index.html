@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="icon" type="image/x-icon" href="src/images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="#hero">CarObka</a>
+                <a href="#info">Info</a>
+                <a href="#download">Download</a>
+                <a href="#how-to">How to</a>
+            </div>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Hero section</h1>
+    </section>
+    <section id="info">
+        <h1>Informācija par izstrādāto sistēmu</h1>
+        <p>Šajā sadaļā jāapraksta, kas ir šī programma. Tavā gadījumā tā ir konsoles Java lietotne automašīnu kolekcijas pārvaldīšanai, kur lietotāji var pierakstīties sistēmā un saglabāt savas iecienītākās automašīnas savā profilā. Šajā sadaļā var iekļaut:
+            <br>Īss funkcionalitātes apraksts
+            <br>Konsoles lietotnes ekrānuzņēmumi
+            <br>Iespējamās priekšrocības salīdzinājumā ar analogiem</p>
+    </section>
+    <section id="download">
+        <h1>Sistēmas lejupielādes adrese</h1>
+        <p>Šeit būs saite programmas lejupielādei. Ja programma vēl nav pieejama tiešsaistē (piemēram, GitHub vai Google Drive), var uzrakstīt "Drīzumā pieejams". Šajā sadaļā var iekļaut:
+            <br>Pogu "Lejupielādēt"
+            <br>Aprakstu par to, kas tieši tiks lejupielādēts (arhīvs ar .jar failu, avota kods utt.)
+            <br>Sistēmas prasības (piemēram, nepieciešama Java 17)</p>
+        <button class="download" onclick="download()">Download</button>
+    </section>
+    <section id="how-to">
+        <h1>Lietotāja ceļvedis</h1>
+        <p>Šajā sadaļā jābūt paskaidrojumam par to, kā lietot programmu. Tā kā tā ir konsoles lietotne, var iekļaut:
+            <br>Komandu sarakstu un to aprakstu (piemēram, add car, delete car, list cars)
+            <br>Konsoles darbības piemēru
+            <br>Instalēšanas ieteikumus, ja tas ir nepieciešams</p>
+    </section>
+    <hr>
+    <footer>
+        <p>Copyright 2025 CarObka. All rights reserved.</p>
+        <div class="contact">
+            <div class="instagram">
+                <img src="src/images/instagram.svg" alt="Instagram">
+                <a href="https://www.instagram.com/carobka/"></a>
+            </div>
+            <div class="youtube">
+                <img src="src/images/youtube.svg" alt="Youtube">
+                <a href="https://www.youtube.com/@carobka63"></a>
+            </div>
+            <div class="github">
+                <img src="src/images/github.svg" alt="Github">
+                <a href="https://github.com/23DP1ELevsa/carObka"></a>
+            </div>
+        </div>
+    </footer>
     <script src="src/js/main.js"></script>
 </body>
 </html>
