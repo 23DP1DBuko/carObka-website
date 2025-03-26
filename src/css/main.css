@@ -114,7 +114,7 @@ header {
 
 .heroslideshow-container h1 {
     position: absolute;
-    top: 70px;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     font-family: "Audiowide", sans-serif;
@@ -167,69 +167,6 @@ header {
 }
 
 
-
-footer {
-    margin-top: 20px;
-    align-items: center;
-    display: flex;
-    height: 10%;
-    justify-content: center;
-    width: 100%;
-}
-    
-footer p {
-    font-size: 24px;
-    margin-right: 7%;
-    padding-bottom: 10px;
-}
-
-.contact {
-    display: flex;
-    gap:10%;
-    align-items: center;
-}
- 
-@media (max-width: 768px) {
-    footer {
-        align-items: center;
-        display: flex;
-        height: 10%;
-        justify-content: center;
-        width: 100%;
-    }
-    footer p {
-        font-size: 16px;
-        padding-bottom: 12px;
-    }  
-    .contact {
-        display: flex;
-        gap:10%;
-        align-items: center;
-    }  
-    .contact img {
-        width: 90%;
-    }
-}
-
-.circle {
-    width: 26px;
-    height: 26px;
-    margin-left: 40px;
-    margin-top: 0px;
-}
-
-.circle img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-@media screen and (max-width: 1225px) {
-    .circle {
-        margin-left: 50%;
-        transform: translateX(-50%);
-        margin-top: 0;
-    }
-}
 .section-inner {
     display: flex;
     align-items: flex-start;
@@ -237,34 +174,50 @@ footer p {
     padding-top: 40px;
     flex-wrap: wrap;
 }
+  
 .section-text {
-    max-width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 20px 120px 20px;
-    line-height: 1.5;
-    font-size: 24px;
+max-width: 80vw;
+margin-left: auto;
+margin-right: auto;
+padding: 40px 20px 120px 20px;
+line-height: 1.5;
+font-size: 24px;
+flex: 1;
+min-width: 60%;
 }
 
-@media (max-width: 1225px) {
-    #info .section-inner {
-        padding-top: 40px;
-        gap: 90px;
-    }
-    #how-to .section-inner {
-        padding-top: 0px;
-        gap: 90px;
-    }
+.section-text h1,
+.section-text p,
+.section-text ul {
+margin-top: 0;
+margin-bottom: 1em;
 }
+
+.circle {
+width: 26px;
+height: 26px;
+margin-left: 40px;
+margin-top: 0px;
+flex-shrink: 0;
+}
+
+.circle img {
+width: 100%;
+height: auto;
+display: block;
+}
+
 #info h1 {
     color: #40685B;
     font-size: 64px;
     line-height: normal;   
 }
-@media (max-width: 1225px) {
-    #info h1 {
-        font-size: 40px;
-    }
+
+
+#info, #how-to {
+    min-height: 60vh;
+    padding: 5vh 0; 
+    width: 100vw;
 }
 
 #download {
@@ -276,21 +229,6 @@ footer p {
 #download h1 {
     color: #EEE;
     font-size: 64px;
-    line-height: normal; 
-}
-@media (max-width: 1225px) {
-    #download h1 {
-        font-size: 40px;
-    }  
-}
-#download p {
-    color: #EEE;
-    font-size: 24px;
-    line-height: normal; 
-}
-#download li {
-    color: #EEE;
-    font-size: 24px;
     line-height: normal; 
 }
 #download .circle {
@@ -309,6 +247,7 @@ footer p {
 }
 
 #download .section-text {
+    color: #EEE;
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -321,10 +260,92 @@ footer p {
     padding: 0vh 0;   
     width: 100vw;
 }
+.download-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transition: justify-content 0.5s ease;
+    margin-top: 70px;
+    padding-bottom: 5vh;
+}
+
+.download-button button {
+    width: 250px; 
+    height: 57px;
+    border-radius: 10px;
+    border: 2px solid #342D2D;
+    background: #40685B;
+    color: #000;
+    text-align: center;
+    font-family: Alata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.3s ease;
+}
+
+#how-to {
+    flex-shrink: 0;
+}
+
+#how-to h1 {
+    color: #40685B;
+    font-size: 64px;
+    line-height: normal;   
+}
+
+hr {
+    width: 70%;
+    height: 2px;
+    background: #40685B;
+}
+
+footer {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    width: 100%;
+}
+    
+footer p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-right: 25%;
+    padding-left: 10%;
+}
+
+.contact {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    margin: 0 10%;
+}
+
+/* for 1225px width and smaller */
 @media (max-width: 1225px) {
+    .circle {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+    }
+
+    #info h1 {
+        font-size: 40px;
+    }
+    #info .section-inner {
+        padding-top: 40px;
+        gap: 20px;
+    }
+
     #download {
         min-height: 80vh;
     }
+    #download h1 {
+        font-size: 40px;
+    }  
     #download .circle {
         margin-left: 50%;
         transform: translateX(-50%);
@@ -342,81 +363,41 @@ footer p {
         line-height: 1.5;
         font-size: 24px;
     }
-}
-.download-button {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    transition: justify-content 0.5s ease;
-    margin-top: 70px;
-    padding-bottom: 5vh;
-}
-
-.download-button button {
-    width: 250px; 
-    height: 57px;
-    border-radius: 5px;
-    border: 2px solid #342D2D;
-    background: #40685B;
-    color: #000;
-    text-align: center;
-    font-family: Alata;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    transition: all 0.3s ease;
-}
-@media (max-width: 1225px) {
     .download-button {
         justify-content: center;
         margin-top: 10vh;
         padding-bottom: 5vh;
     }
-}
 
-#how-to {
-    flex-shrink: 0;
-}
-
-#how-to h1 {
-    color: #40685B;
-    font-size: 64px;
-    line-height: normal;   
-}
-@media (max-width: 1225px) {
     #how-to h1 {
         font-size: 40px;
     }
-}
+    #how-to .section-inner {
+        padding-top: 0px;
+        gap: 20px;
+    }
 
-
-
-#info, #how-to {
-    min-height: 60vh;
-    padding: 5vh 0; 
-    width: 100vw;
-}
-@media (max-width: 768px) {
-    #info, #how-to {
-        min-height: 80vh;
-        padding: 10vh 0;
+    footer p {
+        margin-right: 5%;
+        padding-left: 5%;
+    }
+    .contact {
+        margin: 0 10%;
     }
 }
 
-hr {
-    width: 70%;
-    height: 2px;
-    background: #40685B;
-}
 
-
+/* for 768px and smaller */
 .hamburger {
     display: none;
   }
   
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+    #info, #how-to {
+        min-height: 50vh;
+    }
+
     .hamburger {
       display: flex;
       flex-direction: column;
@@ -445,7 +426,6 @@ hr {
       transform: rotate(-45deg) translate(7px, -6px);
     }
     
-    
     .nav-links {
       position: fixed;
       margin: 0;
@@ -466,8 +446,86 @@ hr {
       background: rgba(0, 0, 0, 0.9);
     }
     .nav-links a {
-      color: white !important;
-      font-size: 24px !important;
-      padding: 15px !important;
+      color: white;
+      font-size: 24px;
+      padding: 15px;
     }
-  }
+
+    .hover-left h1 {
+        padding-left: 40px;
+        font-size: 24px;
+    }
+    
+    #how-to .section-inner {
+        gap: 30px;
+    }
+    #info .section-inner {
+        gap: 30px;
+    }
+    .section-text {
+        padding: 20px 0px;
+    }
+    footer {
+        margin-top: 0;
+        align-items: center;
+        display: flex;
+        height: 6%;
+        justify-content: center;
+        width: 100%;
+    }
+    footer p {
+        font-size: 16px;
+    }  
+    .contact {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 10%;
+        gap: 0;
+    }  
+    .contact img {
+        width: 70%;
+    }
+}
+
+/* for 480px and smaller */
+@media (max-width: 480px) {
+    #info, #how-to {
+        min-height: 40vh;
+    }
+
+    #info h1 {
+        font-size: 32px;
+    }
+    #info .section-inner {
+        padding-top: 40px;
+    }
+    .section-text {
+        font-size: 20px;
+    }
+    #download h1 {
+        font-size: 32px;
+    }  
+    #download p {
+        font-size: 20px;
+    }
+    #download li {
+        font-size: 20px;
+    }
+    #download .section-inner {
+        padding-top: 20px;
+        gap: 50px;
+    }
+    #download .section-text {
+        font-size: 20px;
+    }
+    #how-to h1 {
+        font-size: 32px;
+    }
+    
+    #how-to .section-inner {
+        padding-top: 0px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
