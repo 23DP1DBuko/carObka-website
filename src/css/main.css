@@ -13,7 +13,12 @@
 
 
 header {
-    background-image: url(../images/banner.svg)
+    background-image: url(../images/banner.svg);
+    height: 95px
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
 }
 #hero {
     font-family: "Audiowide", sans-serif;
