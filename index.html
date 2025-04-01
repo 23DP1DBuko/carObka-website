@@ -22,41 +22,46 @@
         </nav>
     </header>
     <section id="hero">
-        <div> <!-- hover if cursor kreisaja puse -->
+        <div class="hover-left"> <!-- hover if cursor kreisa</section>ja puse -->
             <h1>Hero section</h1>
         </div>
-        <div class="car-images">
-            <h1 class="slide1">BMW</h1>
-            <img src="src/images/BMW M3 G80.png" alt="BMW" class="car-photo">
+        <div>
+            <section class="heroslideshow-container">
+                <h1>BMW</h1>
+                <img src="src/images/BMW M3 G80.png" alt="BMW" > 
+            </section>
             
-            <h1 class="slide1">Audi</h1>
-            <img src="src/images/Audi RS3.png" alt="Audi" class="car-photo">
-            
-            <h1 class="slide1">Volkswagen</h1>
-            <img src="src/images/Volkswagen Golf 7.5 R.png" alt="Volkswagen" class="car-photo">
-            
-            <h1 class="slide1">Porsche</h1>
-            <img src="src/images/Porsche 911 GT3.png" alt="Porsche" class="car-photo">
-            
-            <h1 class="slide1">Mercedes</h1>
-            <img src="src/images/Mercedes-Benz E63S AMG W213.png" alt="Mercedes" class="car-photo">
+            <section class="heroslideshow-container">
+                <h1>Audi</h1>
+                <img src="src/images/Audi RS3.png" alt="Audi" > 
+            </section>
+
+            <section class="heroslideshow-container">
+                <h1>Volkswagen</h1>
+                <img src="src/images/Volkswagen Golf 7.5 R.png" alt="Volkswagen" > 
+            </section>
+
+            <section class="heroslideshow-container">
+                <h1>Porsche</h1>
+                <img src="src/images/Porsche 911 GT3.png" alt="Porsche" >
+            </section>
+
+            <section class="heroslideshow-container">
+                <h1>Mercedes</h1>
+                <img src="src/images/Mercedes-Benz E63S AMG W213.png" alt="Mercedes" >
+            </section>
         </div>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- hover if cursor labaja pusē -->
-        <a class="next" onclick="plusSlides(1)">
-            <svg width="112" height="810" viewBox="0 0 112 810" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="112" height="810" fill="url(#paint0_linear_21_146)"/>
-            <path d="M59 464L91.1475 388.603" stroke="#D1D1D1" stroke-width="7" stroke-linecap="round"/>
-            <path d="M59 315L91 388" stroke="#D1D1D1" stroke-width="7" stroke-linecap="round"/>
-            <defs>
-            <linearGradient id="paint0_linear_21_146" x1="112" y1="405" x2="0" y2="405" gradientUnits="userSpaceOnUse">
-            <stop offset="0.195" stop-opacity="0.34"/>
-            <stop offset="1" stop-color="#666666" stop-opacity="0"/>
-            </linearGradient>
-            </defs>
-            </svg>
-        </a> <!-- hover if cursor labaja pusē -->
+        <div class="hover-right"> <!-- hover if cursor labaja pusē -->
+            <a class="next" onclick="plusSlides(1)">
+                <img src="src/images/arrow.png" alt="Arrow">
+            </a>
+        </div>    
     </section>
-    <section id="info">
+    
+        
+    
+    
+        <section id="info">
         <h1>Informācija par izstrādāto sistēmu</h1>
         <p>Šajā sadaļā jāapraksta, kas ir šī programma. Tavā gadījumā tā ir konsoles Java lietotne automašīnu kolekcijas pārvaldīšanai, kur lietotāji var pierakstīties sistēmā un saglabāt savas iecienītākās automašīnas savā profilā. Šajā sadaļā var iekļaut:
             <br>Īss funkcionalitātes apraksts
@@ -65,7 +70,7 @@
     </section>
     <section id="download">
         <h1>Sistēmas lejupielādes adrese</h1>
-        <p>Šeit būs saite programmas lejupielādei. Ja programma vēl nav pieejama tiešsaistē (piemēram, GitHub vai Google Drive), var uzrakstīt "Drīzumā pieejams". Šajā sadaļā var iekļaut:
+        <p>Šeit būs saite programmas lejupielādei. Ja programma vēl nav pieejama tiešsaistē (piemēram, GitHub vai Google Drive), var</svg> uzrakstīt "Drīzumā pieejams". Šajā sadaļā var iekļaut:
             <br>Pogu "Lejupielādēt"
             <br>Aprakstu par to, kas tieši tiks lejupielādēts (arhīvs ar .jar failu, avota kods utt.)
             <br>Sistēmas prasības (piemēram, nepieciešama Java 17)</p>
