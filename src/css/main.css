@@ -1,4 +1,3 @@
-
 /* fonti */
 .alata-regular {
     font-family: "Alata", sans-serif;
@@ -11,7 +10,6 @@
     font-style: normal;
 }
 
-
 header {
     background-image: url(../images/banner.png);
     background-size: auto 75px;
@@ -20,6 +18,10 @@ header {
     height: 75px;
     width: 100%;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 
     @media (max-width: 768px) {
         background-size: auto 75px;
@@ -49,41 +51,112 @@ header {
 }
 
 #hero {
-    font-family: "Alata", sans-serif;
     position: relative;
     max-width: 100%;
     height: 1080px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
+
+.car-slides {
+    position: relative;
+    z-index: 5;
 }
 
 .hover-left {
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 36px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-bottom-right-radius: 30px;
-    cursor: pointer;
-    height: 1080px;
+    top: 0;
+    height: 100%;
     width: 704px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    left: -700px;
+    border-bottom-right-radius: 30px;
+    opacity: 0;
+    transform: translateX(0);
+}
+
+.heroslideshow-container:hover .hover-left {
+    transform: translateX(700px);
+    opacity: 0.9;
+}
+
+.heroslideshow-container:not(:hover) .hover-left {
+    transform: translateX(0);
+    opacity: 0;
+}
+
+.hover-left {
+    left: -700px;
+    border-bottom-right-radius: 30px;
+    opacity: 0;
+    transform: translateX(0);
+}
+
+.hover-left:hover{
+    transform: translateX(700px);
+    opacity: 0.9;
 }
 
 .heroslideshow-container {
     position: relative;
     max-width: 100%;
     height: 1080px;
-  }
+}
+
+.heroslideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .heroslideshow-container h1 {
-    position: relative;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: "Audiowide", sans-serif;
+    color: white;
+    font-size: 36px;
+    z-index: 15;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.heroslideshow-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    z-index: 15;
+    background: transparent;
+}
+
+.heroslideshow-container:hover .hover-left {
+    left: 0;
+}
+
+  .heroslideshow-container h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    z-index: 20;
 }
 
 .heroslideshow-container img {
@@ -95,33 +168,40 @@ header {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 0%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    top: 50%; /* Центрируем стрелку по вертикали */
+    right: 0; /* Размещаем стрелку вплотную к правому краю */
+    transform: translateY(-50%); /* Центрируем относительно оси Y */
+    padding: 0px; /* Добавляем небольшой внутренний отступ */
     color: black;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    transition: background-color 0.3s ease; /* Плавный переход для эффекта наведения */
+    border-radius: 3px 0 0 3px; /* Скругляем левый край */
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
+    z-index: 15; /* Устанавливаем высокий z-index, чтобы стрелка была поверх других элементов */
+}
+
+.next img {
+    width: 100px; /* Размер изображения стрелки */
+    height: 1080px;
+}
+
+.next:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     border-radius: 3px 0 0 3px;
-  }
+}
 
 body {
     font-family: "Alata", sans-serif;
-    margin: 0px;
+    margin: 0;
     width: 100%;
 }
+
 footer {
     display: flex;
     justify-content: center;
 }
+    
 footer p {
     margin-right: 50px;
 }
