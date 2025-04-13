@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* fonti */
 .alata-regular {
     font-family: "Alata", sans-serif;
@@ -67,8 +70,8 @@ header {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 704px;
-    background-color: rgba(0, 0, 0, 0.9);
+    width: 800px;
+    background-color: rgba(0, 0, 0);
     color: white;
     display: flex;
     justify-content: center;
@@ -76,23 +79,6 @@ header {
     z-index: 10;
     transition: transform 0.5s ease, opacity 0.5s ease;
     cursor: pointer;
-    left: -700px;
-    border-bottom-right-radius: 30px;
-    opacity: 0;
-    transform: translateX(0);
-}
-
-.heroslideshow-container:hover .hover-left {
-    transform: translateX(700px);
-    opacity: 0.9;
-}
-
-.heroslideshow-container:not(:hover) .hover-left {
-    transform: translateX(0);
-    opacity: 0;
-}
-
-.hover-left {
     left: -700px;
     border-bottom-right-radius: 30px;
     opacity: 0;
@@ -110,26 +96,6 @@ header {
     height: 1080px;
 }
 
-.heroslideshow-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.heroslideshow-container h1 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Audiowide", sans-serif;
-    color: white;
-    font-size: 36px;
-    z-index: 15;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-}
-
 .heroslideshow-container::before {
     content: '';
     position: absolute;
@@ -141,13 +107,10 @@ header {
     background: transparent;
 }
 
-.heroslideshow-container:hover .hover-left {
-    left: 0;
-}
 
   .heroslideshow-container h1 {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-family: "Audiowide", sans-serif;
@@ -155,7 +118,7 @@ header {
     padding: 0;
     background: transparent;
     color: black;
-    font-size: 36px;
+    font-size: 120px;
     text-align: center;
     z-index: 20;
 }
@@ -169,12 +132,9 @@ header {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%; /* Центрируем стрелку по вертикали */
+    top: 0; /* Центрируем стрелку по вертикали */
     right: 0; /* Размещаем стрелку вплотную к правому краю */
-    transform: translateY(-50%); /* Центрируем относительно оси Y */
-    transform: translateX(5px);
     padding: 0px; /* Добавляем небольшой внутренний отступ */
-    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: background-color 0.3s ease; /* Плавный переход для эффекта наведения */
@@ -191,7 +151,6 @@ header {
 .next:hover {
     background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     border-radius: 3px 0 0 3px;
-    transform: translateX(-5px)
 }
 
 body {
@@ -201,21 +160,129 @@ body {
 }
 
 footer {
+    align-items: center;
     display: flex;
+    height: 140px;
     justify-content: center;
 }
     
 footer p {
-    margin-right: 50px;
+    font-size: 24px;
+    margin-right: 200px;
 }
 
 .contact {
-    gap:20px;
+    gap:50px;
     display: flex;
     align-items: center;
-    
 }
+ 
+#info .circle {
+    padding-left: 25px;
+    padding-top: 90px;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+#info {
+    flex-shrink: 0;
+}
+
+#info h1 {
+    color: #40685B;
+    font-size: 64px;
+    line-height: normal;   
+}
+
+#download .circle {
+    color: #EEE;
+    padding-left: 25px;
+    padding-top: 90px;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+#download {
+    height: 900px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: #1D1C1C;
+    box-shadow: 0px 21px 28.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+#download h1 {
+    color: #EEE;
+    font-size: 64px;
+    line-height: normal; 
+}
+#download p {
+    color: #EEE;
+    font-size: 24px;
+    line-height: normal; 
+}
+#download li {
+    color: #EEE;
+    font-size: 24px;
+    line-height: normal; 
+}
+
+.download-button {
+    flex-shrink: 0;
+    float: right;
+}
+.download-button button {
+    width: 666px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 2px solid #342D2D;
+    background: #40685B;
+    color: #000;
+    text-align: center;
+    font-family: Alata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#how-to .circle {
+    padding-left: 25px;
+    padding-top: 90px;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+#how-to {
+    flex-shrink: 0;
+}
+
+#how-to h1 {
+    color: #40685B;
+    font-size: 64px;
+    line-height: normal;   
+}
+
+
+
+
+.section-text {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
 section {
-    height: 1080px;
+    min-height: 1080px;
 }
-  
+
+hr {
+    width: 70%;
+    height: 2px;
+    background: #40685B;
+}
