@@ -69,7 +69,7 @@ header {
 
 .hover-left {
     position: absolute;
-    top: 0;
+    top: -5px;
     height: 100%;
     width: 70%;
     background-color: rgba(0, 0, 0);
@@ -119,9 +119,9 @@ header {
     padding: 0;
     background: transparent;
     color: black;
-    font-size: 120px;
+    font-size: 400%;
     @media screen and (max-width: 768px) {
-        font-size: 80px;
+        font-size: 200%;
     }
     text-align: center;
     z-index: 20;
