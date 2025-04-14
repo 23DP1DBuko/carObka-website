@@ -40,10 +40,10 @@ header {
 }
 .nav-links {
     display: flex;
-    margin-left: 159px;
+    margin-left: 10%;
     height: 55px;
     align-items: center;
-    gap: 101px;
+    gap: 5%;
 }
 
 .nav-links a {
@@ -57,7 +57,8 @@ header {
     top: 55px;
     position: relative;
     max-width: 100%;
-    height: 1080px;
+    max-height: 1080px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -70,7 +71,7 @@ header {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 800px;
+    width: 70%;
     background-color: rgba(0, 0, 0);
     color: white;
     display: flex;
@@ -79,21 +80,21 @@ header {
     z-index: 10;
     transition: transform 0.5s ease, opacity 0.5s ease;
     cursor: pointer;
-    left: -700px;
+    left: -60%;
     border-bottom-right-radius: 30px;
     opacity: 0;
     transform: translateX(0);
 }
 
 .hover-left:hover{
-    transform: translateX(700px);
+    transform: translateX(60%);
     opacity: 0.9;
 }
 
 .heroslideshow-container {
     position: relative;
     max-width: 100%;
-    height: 1080px;
+    height: 100%;
 }
 
 .heroslideshow-container::before {
@@ -108,9 +109,9 @@ header {
 }
 
 
-  .heroslideshow-container h1 {
+.heroslideshow-container h1 {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     font-family: "Audiowide", sans-serif;
@@ -119,38 +120,44 @@ header {
     background: transparent;
     color: black;
     font-size: 120px;
+    @media screen and (max-width: 768px) {
+        font-size: 80px;
+    }
     text-align: center;
     z-index: 20;
+    
 }
+
 
 .heroslideshow-container img {
     width: 100%;
-    height: 1080px;
+    height: 100%;
     object-fit: cover;
 }
-/* Next & previous buttons */
+.hover-right {
+    height: 100%;
+}
+
 .next {
     cursor: pointer;
     position: absolute;
-    top: 0; /* Центрируем стрелку по вертикали */
-    right: 0; /* Размещаем стрелку вплотную к правому краю */
-    padding: 0px; /* Добавляем небольшой внутренний отступ */
-    font-weight: bold;
-    font-size: 18px;
-    transition: background-color 0.3s ease; /* Плавный переход для эффекта наведения */
-    border-radius: 3px 0 0 3px; /* Скругляем левый край */
+    top: 0;
+    right: 0;
+    height: 100%;
     user-select: none;
-    z-index: 15; /* Устанавливаем высокий z-index, чтобы стрелка была поверх других элементов */
+    opacity: 0;
+    z-index: 15;
 }
-
 .next img {
-    width: 100px; /* Размер изображения стрелки */
-    height: 1080px;
+    object-fit: cover;
+    height: 100%;
 }
 
 .next:hover {
+    transition-duration: 0.5s;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     border-radius: 3px 0 0 3px;
+    opacity: 1;
 }
 
 body {
@@ -162,21 +169,44 @@ body {
 footer {
     align-items: center;
     display: flex;
-    height: 140px;
+    height: 10%;
     justify-content: center;
+    width: 100%;
 }
     
 footer p {
     font-size: 24px;
-    margin-right: 200px;
+    margin-right: 7%;
+    padding-bottom: 10px;
 }
 
 .contact {
-    gap:50px;
+    gap:20%;
     display: flex;
     align-items: center;
 }
  
+@media (max-width: 768px) {
+    footer {
+        align-items: center;
+        display: flex;
+        height: 10%;
+        justify-content: center;
+        width: 100%;
+    }
+    footer p {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }  
+    .contact {
+        width: 80%;
+        height: 80%;
+        gap:10%;
+        display: flex;
+        align-items: center;
+    }  
+}
+
 #info .circle {
     padding-left: 25px;
     padding-top: 90px;
@@ -233,7 +263,8 @@ footer p {
     float: right;
 }
 .download-button button {
-    width: 666px;
+    margin-top: 30px;
+    width: 120%;
     height: 57px;
     flex-shrink: 0;
     border-radius: 5px;
@@ -277,7 +308,7 @@ footer p {
     line-height: 1.5;
 }
 
-section {
+#info, #how-to, #download{
     min-height: 1080px;
 }
 
