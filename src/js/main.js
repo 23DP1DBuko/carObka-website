@@ -22,3 +22,31 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", (e) => {
+    e.stopPropagation(); // предотвращаем всплытие клика
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      hamburger.classList.remove("active");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      !event.target.closest(".nav-links") &&
+      !event.target.closest(".hamburger")
+    ) {
+      navLinks.classList.remove("active");
+      hamburger.classList.remove("active");
+    }
+  });
+});

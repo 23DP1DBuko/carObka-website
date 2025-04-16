@@ -1,125 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="icon" type="image/x-icon" href="src/images/logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Audiowide&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="icon" type="image/x-icon" href="src/images/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Audiowide&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-links">
-                <a href="#hero">CarObka</a>
-                <a href="#info">Info</a>
-                <a href="#download">Download</a>
-                <a href="#how-to">How to</a>
-            </div>
-        </nav>
-    </header>
-    <section id="hero">
-        <div class="hover-left">
-            <h1>Hero section</h1>
-        </div>
-        <div class="car-slides">
-            <section class="heroslideshow-container">
-                <h1>BMW</h1>
-                <img src="src/images/BMW M3 G80.png" alt="BMW">
-            </section>
-    
-            <section class="heroslideshow-container">
-                <h1>Audi</h1>
-                <img src="src/images/Audi RS3.png" alt="Audi">
-            </section>
-    
-            <section class="heroslideshow-container">
-                <h1>Volkswagen</h1>
-                <img src="src/images/Volkswagen Golf 7.5 R.png" alt="Volkswagen">
-            </section>
-    
-            <section class="heroslideshow-container">
-                <h1>Porsche</h1>
-                <img src="src/images/Porsche 911 GT3.png" alt="Porsche">
-            </section>
-    
-            <section class="heroslideshow-container">
-                <h1>Mercedes</h1>
-                <img src="src/images/Mercedes-Benz E63S AMG W213.png" alt="Mercedes">
-            </section>
-        </div>
-        <div class="hover-right">
-            <a class="next" onclick="plusSlides(1)">
-                <img src="src/images/arrow.png" alt="Arrow">
-            </a>
-        </div>
-    </section>
-    
-        <section id="info">
-            <div class="circle">
-                <img src="src/images/circle.svg">
-            </div>
-            <div class="section-text">
-                <h1>Informācija par izstrādāto sistēmu</h1>
-                <p>Šajā sadaļā jāapraksta, kas ir šī programma. Tavā gadījumā tā ir konsoles Java lietotne automašīnu kolekcijas pārvaldīšanai, kur lietotāji var pierakstīties sistēmā un saglabāt savas iecienītākās automašīnas savā profilā. Šajā sadaļā var iekļaut:
-                <li>Īss funkcionalitātes apraksts</li>
-                <li>Konsoles lietotnes ekrānuzņēmumi</li>
-                <li>Iespējamās priekšrocības salīdzinājumā ar analogiem</li></p
-            </div>
-        </section>
-    <section id="download">
-        <div class="circle">
-            <img src="src/images/circle.svg">
-        </div>
-        <div class="section-text">
-            <h1>Sistēmas lejupielādes adrese</h1>
-            <p>Šeit būs saite programmas lejupielādei. Ja programma vēl nav pieejama tiešsaistē (piemēram, GitHub vai Google Drive), var</svg> uzrakstīt "Drīzumā pieejams". Šajā sadaļā var iekļaut:
-                <li>Pogu "Lejupielādēt"</li>
-                <li>Aprakstu par to, kas tieši tiks lejupielādēts (arhīvs ar .jar failu, avota kods utt.)</li>
-                <li>Sistēmas prasības (piemēram, nepieciešama Java 17)</li></p>
-            <div class="download-button">
-                <a href="src/file/r-e-p-o-skrimer.mp3" download="file">
-                    <button onclick="download()">Download</button>
-                </a>
-            </div>   
-        </div>
-    </section>
-    <section id="how-to">
-        <div class="circle">
-            <img src="src/images/circle.svg">
-        </div>
-        <div class="section-text">
-            <h1>Lietotāja ceļvedis</h1>
-            <p>Šajā sadaļā jābūt paskaidrojumam par to, kā lietot programmu. Tā kā tā ir konsoles lietotne, var iekļaut:
-                <li>Komandu sarakstu un to aprakstu (piemēram, add car, delete car, list cars)</li>
-                <li>Konsoles darbības piemēru</li>
-                <li>Instalēšanas ieteikumus, ja tas ir nepieciešams</li></p>
-       </div>
-    </section>
-    <hr>
-    <footer>
-        <p>Copyright 2025 CarObka. All rights reserved.</p>
-        <div class="contact">
-            <div class="instagram">
-                <a href="https://www.instagram.com/carobka/">
-                    <img src="src/images/instagram.svg" alt="Instagram">
-                </a>
-            </div>
-            <div class="youtube"> 
-                <a href="https://www.youtube.com/@carobka63">
-                    <img src="src/images/youtube.svg" alt="Youtube">
-                </a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/23DP1ELevsa/carObka">
-                    <img src="src/images/github.svg" alt="Github">
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="src/js/main.js"></script>
+  <header>
+    <nav>
+      <!-- Добавляем гамбургер для мобильной версии -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero">CarObka</a>
+        <a href="#info">Info</a>
+        <a href="#download">Download</a>
+        <a href="#how-to">How to</a>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="hero">
+    <div class="hover-left">
+      <h1>Hero section</h1>
+    </div>
+    <div class="car-slides">
+      <section class="heroslideshow-container">
+        <h1>BMW</h1>
+        <img src="src/images/BMW M3 G80.png" alt="BMW">
+      </section>
+      <section class="heroslideshow-container">
+        <h1>Audi</h1>
+        <img src="src/images/Audi RS3.png" alt="Audi">
+      </section>
+      <section class="heroslideshow-container">
+        <h1>Volkswagen</h1>
+        <img src="src/images/Volkswagen Golf 7.5 R.png" alt="Volkswagen">
+      </section>
+      <section class="heroslideshow-container">
+        <h1>Porsche</h1>
+        <img src="src/images/Porsche 911 GT3.png" alt="Porsche">
+      </section>
+      <section class="heroslideshow-container">
+        <h1>Mercedes</h1>
+        <img src="src/images/Mercedes-Benz E63S AMG W213.png" alt="Mercedes">
+      </section>
+    </div>
+    <div class="hover-right">
+      <a class="next" onclick="plusSlides(1)">
+        <img src="src/images/arrow.png" alt="Arrow">
+      </a>
+    </div>
+  </section>
+  
+  <!-- Остальные секции остаются без изменений -->
+  <section id="info">
+    <div class="circle">
+      <img src="src/images/circle.svg" alt="Circle">
+    </div>
+    <div class="section-text">
+      <h1>Informācija par izstrādāto sistēmu</h1>
+      <p>
+        Šajā sadaļā jāapraksta, kas ir šī programma. Tavā gadījumā tā ir konsoles Java lietotne automašīnu kolekcijas pārvaldīšanai, kur lietotāji var pierakstīties sistēmā un saglabāt savas iecienītākās automašīnas savā profilā. Šajā sadaļā var iekļaut:
+        <li>Īss funkcionalitātes apraksts</li>
+        <li>Konsoles lietotnes ekrānuzņēmumi</li>
+        <li>Iespējamās priekšrocības salīdzinājumā ar analogiem</li>
+      </p>
+    </div>
+  </section>
+  
+  <section id="download">
+    <div class="circle">
+      <img src="src/images/circle.svg" alt="Circle">
+    </div>
+    <div class="section-text">
+      <h1>Sistēmas lejupielādes adrese</h1>
+      <p>
+        Šeit būs saite programmas lejupielādei. Ja programma vēl nav pieejama tiešsaistē (piemēram, GitHub vai Google Drive), var uzrakstīt "Drīzumā pieejams". Šajā sadaļā var iekļaut:
+        <li>Pogu "Lejupielādēt"</li>
+        <li>Aprakstu par to, kas tieši tiks lejupielādēts (arhīvs ar .jar failu, avota kods utt.)</li>
+        <li>Sistēmas prasības (piemēram, nepieciešama Java 17)</li>
+      </p>
+      <div class="download-button">
+        <a href="src/file/r-e-p-o-skrimer.mp3" download="file">
+          <button onclick="download()">Download</button>
+        </a>
+      </div>   
+    </div>
+  </section>
+  
+  <section id="how-to">
+    <div class="circle">
+      <img src="src/images/circle.svg" alt="Circle">
+    </div>
+    <div class="section-text">
+      <h1>Lietotāja ceļvedis</h1>
+      <p>
+        Šajā sadaļā jābūt paskaidrojumam par to, kā lietot programmu. Tā kā tā ir konsoles lietotne, var iekļaut:
+        <li>Komandu sarakstu un to aprakstu (piemēram, add car, delete car, list cars)</li>
+        <li>Konsoles darbības piemēru</li>
+        <li>Instalēšanas ieteikumus, ja tas ir nepieciešams</li>
+      </p>
+    </div>
+  </section>
+  
+  <hr>
+  <footer>
+    <p>Copyright 2025 CarObka. All rights reserved.</p>
+    <div class="contact">
+      <div class="instagram">
+        <a href="https://www.instagram.com/carobka/">
+          <img src="src/images/instagram.svg" alt="Instagram">
+        </a>
+      </div>
+      <div class="youtube"> 
+        <a href="https://www.youtube.com/@carobka63">
+          <img src="src/images/youtube.svg" alt="Youtube">
+        </a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/23DP1ELevsa/carObka">
+          <img src="src/images/github.svg" alt="Github">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="src/js/main.js"></script>
 </body>
 </html>
