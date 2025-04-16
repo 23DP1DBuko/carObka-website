@@ -141,7 +141,7 @@ header {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 0;
     height: 100%;
     user-select: none;
@@ -181,7 +181,6 @@ footer p {
 }
 
 .contact {
-    gap:20%;
     display: flex;
     align-items: center;
 }
@@ -201,7 +200,7 @@ footer p {
     .contact {
         width: 80%;
         height: 80%;
-        gap:10%;
+        
         display: flex;
         align-items: center;
     }  
@@ -224,6 +223,12 @@ footer p {
     font-size: 64px;
     line-height: normal;   
 }
+@media (max-width: 768px) {
+    #info h1 {
+        font-size: 40px;
+    }
+}
+
 
 #download .circle {
     color: #EEE;
@@ -235,17 +240,31 @@ footer p {
 }
 
 #download {
-    height: 900px;
+    height: 1080px;
     flex-shrink: 0;
     border-radius: 60px;
     background: #1D1C1C;
     box-shadow: 0px 21px 28.3px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+    #download {
+        height: 1500px;
+        border-radius: 60px;
+        background: #1D1C1C;
+        box-shadow: 0px 21px 28.3px 0px rgba(0, 0, 0, 0.25);
+    }
+    
 }
 
 #download h1 {
     color: #EEE;
     font-size: 64px;
     line-height: normal; 
+}
+@media (max-width: 768px) {
+    #download h1 {
+        font-size: 40px;
+    }  
 }
 #download p {
     color: #EEE;
@@ -296,6 +315,11 @@ footer p {
     font-size: 64px;
     line-height: normal;   
 }
+@media (max-width: 768px) {
+    #how-to h1 {
+        font-size: 40px;
+    }
+}
 
 
 
@@ -324,6 +348,7 @@ hr {
   }
   
   /* На мобильной версии показываем гамбургер */
+  
   @media (max-width: 768px) {
     .hamburger {
       display: flex;
