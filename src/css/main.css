@@ -385,7 +385,7 @@ hr {
       top: 55px;
       left: -100%;
       flex-direction: column;
-      background: rgba(0, 0, 0, 0.9);
+      background: rgba(0, 0, 0, 0);
       width: 100%;
       height: calc(100vh - 55px);
       transition: 0.3s;
@@ -396,6 +396,7 @@ hr {
     }
     .nav-links.active {
       left: 0;
+      background: rgba(0, 0, 0, 0.8);
     }
     .nav-links a {
       color: white !important;
