@@ -1,6 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
 /* fonti */
 .alata-regular {
     font-family: "Alata", sans-serif;
@@ -11,6 +8,20 @@ html {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Alata", sans-serif;
+    margin: 0;
+    width: 100%;
 }
 
 header {
@@ -57,8 +68,6 @@ header {
     top: 55px;
     position: relative;
     max-width: 100%;
-    max-height: 1080px;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -69,8 +78,8 @@ header {
 
 .hover-left {
     position: absolute;
-    top: -5px;
     height: 100%;
+    top: 0px;
     width: 70%;
     background-color: rgba(0, 0, 0);
     color: white;
@@ -91,12 +100,6 @@ header {
     opacity: 0.9;
 }
 
-.heroslideshow-container {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-}
-
 .heroslideshow-container::before {
     content: '';
     position: absolute;
@@ -111,7 +114,7 @@ header {
 
 .heroslideshow-container h1 {
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     font-family: "Audiowide", sans-serif;
@@ -119,20 +122,23 @@ header {
     padding: 0;
     background: transparent;
     color: black;
-    font-size: 400%;
-    @media screen and (max-width: 768px) {
-        font-size: 200%;
-    }
+    font-size: clamp(24px, 5vw, 120px);
     text-align: center;
     z-index: 20;
-    
 }
 
+.heroslideshow-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
 
 .heroslideshow-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 .hover-right {
     height: 100%;
@@ -140,8 +146,8 @@ header {
 
 .next {
     cursor: pointer;
+    top: 0px;
     position: absolute;
-    top: -5px;
     right: 0;
     height: 100%;
     user-select: none;
@@ -160,13 +166,10 @@ header {
     opacity: 1;
 }
 
-body {
-    font-family: "Alata", sans-serif;
-    margin: 0;
-    width: 100%;
-}
+
 
 footer {
+    margin-top: 20px;
     align-items: center;
     display: flex;
     height: 10%;
@@ -208,54 +211,66 @@ footer p {
     }
 }
 
-#info .circle {
-    padding-left: 25px;
-    padding-top: 90px;
+.circle {
     width: 26px;
     height: 26px;
-    flex-shrink: 0;
+    margin-left: 40px;
+    margin-top: 0px;
 }
 
-#info {
-    flex-shrink: 0;
+.circle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media screen and (max-width: 1225px) {
+    .circle {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+    }
+}
+.section-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.section-text {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 20px 120px 20px;
+    line-height: 1.5;
+    font-size: 24px;
 }
 
+@media (max-width: 1225px) {
+    #info .section-inner {
+        padding-top: 40px;
+        gap: 90px;
+    }
+    #how-to .section-inner {
+        padding-top: 0px;
+        gap: 90px;
+    }
+}
 #info h1 {
     color: #40685B;
     font-size: 64px;
     line-height: normal;   
 }
-@media (max-width: 768px) {
+@media (max-width: 1225px) {
     #info h1 {
         font-size: 40px;
     }
 }
 
-
-#download .circle {
-    color: #EEE;
-    padding-left: 25px;
-    padding-top: 90px;
-    width: 26px;
-    height: 26px;
-    flex-shrink: 0;
-}
-
 #download {
-    height: 1080px;
-    flex-shrink: 0;
     border-radius: 60px;
     background: #1D1C1C;
     box-shadow: 0px 21px 28.3px 0px rgba(0, 0, 0, 0.25);
-}
-@media (max-width: 768px) {
-    #download {
-        height: 1500px;
-        border-radius: 60px;
-        background: #1D1C1C;
-        box-shadow: 0px 21px 28.3px 0px rgba(0, 0, 0, 0.25);
-    }
-    
 }
 
 #download h1 {
@@ -263,7 +278,7 @@ footer p {
     font-size: 64px;
     line-height: normal; 
 }
-@media (max-width: 768px) {
+@media (max-width: 1225px) {
     #download h1 {
         font-size: 40px;
     }  
@@ -278,16 +293,68 @@ footer p {
     font-size: 24px;
     line-height: normal; 
 }
-
-.download-button {
-    flex-shrink: 0;
-    float: right;
+#download .circle {
+    width: 26px;
+    height: 26px;
+    margin-left: 40px;
+    margin-top: 40px;
 }
+
+#download .section-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+#download .section-text {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 20px;
+    line-height: 1.5;
+    font-size: 24px;
+}
+#download {
+    min-height: 60vh;
+    padding: 0vh 0;   
+    width: 100vw;
+}
+@media (max-width: 1225px) {
+    #download {
+        min-height: 80vh;
+    }
+    #download .circle {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+    #download .section-inner {
+        padding-top: 20px;
+        gap: 90px;
+    }
+    #download .section-text {
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+        line-height: 1.5;
+        font-size: 24px;
+    }
+}
+.download-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transition: justify-content 0.5s ease;
+    margin-top: 70px;
+    padding-bottom: 5vh;
+}
+
 .download-button button {
-    margin-top: 30px;
-    width: 120%;
+    width: 250px; 
     height: 57px;
-    flex-shrink: 0;
     border-radius: 5px;
     border: 2px solid #342D2D;
     background: #40685B;
@@ -298,14 +365,14 @@ footer p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: all 0.3s ease;
 }
-
-#how-to .circle {
-    padding-left: 25px;
-    padding-top: 90px;
-    width: 26px;
-    height: 26px;
-    flex-shrink: 0;
+@media (max-width: 1225px) {
+    .download-button {
+        justify-content: center;
+        margin-top: 10vh;
+        padding-bottom: 5vh;
+    }
 }
 
 #how-to {
@@ -317,7 +384,7 @@ footer p {
     font-size: 64px;
     line-height: normal;   
 }
-@media (max-width: 768px) {
+@media (max-width: 1225px) {
     #how-to h1 {
         font-size: 40px;
     }
@@ -325,17 +392,16 @@ footer p {
 
 
 
-
-.section-text {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    font-size: 24px;
-    line-height: 1.5;
+#info, #how-to {
+    min-height: 60vh;
+    padding: 5vh 0; 
+    width: 100vw;
 }
-
-#info, #how-to, #download{
-    min-height: 1080px;
+@media (max-width: 768px) {
+    #info, #how-to {
+        min-height: 80vh;
+        padding: 10vh 0;
+    }
 }
 
 hr {
@@ -344,12 +410,11 @@ hr {
     background: #40685B;
 }
 
-/* Гамбургер – по умолчанию скрыт на десктопе */
+
 .hamburger {
     display: none;
   }
   
-  /* На мобильной версии показываем гамбургер */
   
   @media (max-width: 768px) {
     .hamburger {
@@ -369,7 +434,7 @@ hr {
       background: #000;
       transition: 0.3s;
     }
-    /* Превращение гамбургера в крестик при активном состоянии */
+    
     .hamburger.active span:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
     }
@@ -380,7 +445,7 @@ hr {
       transform: rotate(-45deg) translate(7px, -6px);
     }
     
-    /* Навигационное меню для мобильной версии */
+    
     .nav-links {
       position: fixed;
       margin: 0;
