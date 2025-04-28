@@ -198,8 +198,8 @@ footer p {
         width: 100%;
     }
     footer p {
-        font-size: 20px;
-        padding-bottom: 5px;
+        font-size: 16px;
+        padding-bottom: 12px;
     }  
     .contact {
         display: flex;
