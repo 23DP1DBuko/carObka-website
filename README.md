@@ -30,17 +30,25 @@ CarObka oficiālā tīmekļa vietne sniedz informāciju par mūsu konsoles lieto
 
 ## 🛠 Instalācija
 
-1. Lejupielādējiet programmu caur mūsu vietni:
-   ![Download screenshot](link-to-screenshot)
-2. Sekojiet instrukcijām ekrānā:
-   ![Installation steps](link-to-screenshot)
-3. Palaidiet programmu:
-   ![Run program](link-to-screenshot)
+1. Lejupielādējiet programmu caur mūsu vietni: <br><br>
+   ![Download screenshot](src/images/download-step1.png) <br><br>
+2. Atveriet lejupielādēto zip-mapi: <br><br>
+   ![Open install](src/images/download-step2.png) <br><br>
+3. Izvelciet mapi savā datorā: <br><br>
+   ![Extract folder](src/images/download-step3.png) <br><br>
+4. Atveriet terminālu un ievadiet komandas:
+   ```bash
+   cd folder\path
+   chcp 65001
+   mvn compile exec:java
+   ```
+   ![Terminal](src/images/download-step4.png)
 
 ## 📩 Kontakti
 
-- E-pasts: carobka52@gmail.com
-- [![GitHub](https://img.shields.io/badge/GitHub-CarObka_Projekts-181717?style=flat-square&logo=github)](https://github.com/23DP1ELevsa/carObka) <br><br><br>
+- E-pasts: carobka52@gmail.com <br><br>
+  [![GitHub](https://img.shields.io/badge/GitHub-CarObka_Projekts-181717?style=flat-square&logo=github)](https://github.com/23DP1ELevsa/carObka) <br>
+  [![CarObka Website](https://img.shields.io/badge/CarObka%20Weblapa-4285F4?logo=GoogleChrome&logoColor=white)](https://23dp1dbuko.github.io/carObka-website/) <br><br><br>
 
 ---
 <br><br>
@@ -72,14 +80,22 @@ The official CarObka website provides information about our console-based car ma
 
 ## 🛠 Installation
 
-1. Download the program through our website:
-   ![Download screenshot](link-to-screenshot)
-2. Follow on-screen instructions:
-   ![Installation steps](link-to-screenshot)
-3. Run the program:
-   ![Run program](link-to-screenshot)
+1. Download the program from our website: <br><br>
+   ![Download screenshot](src/images/download-step1.png) <br><br>
+2. Open the downloaded ZIP folder: <br><br>
+   ![Open install](src/images/download-step2.png) <br><br>
+3. Extract the folder to your computer: <br><br>
+   ![Extract folder](src/images/download-step3.png) <br><br>
+4. Open a terminal and enter the following commands:
+   ```bash
+   cd folder\path
+   chcp 65001
+   mvn compile exec:java
+   ```
+   ![Terminal](src/images/download-step4.png)
 
 ## 📩 Contacts
 
-- E-mail: carobka52@gmail.com 
-- [![GitHub](https://img.shields.io/badge/GitHub-CarObka_Project-181717?style=flat-square&logo=github)](https://github.com/23DP1ELevsa/carObka)
+- E-mail: carobka52@gmail.com <br><br>
+  [![GitHub](https://img.shields.io/badge/GitHub-CarObka_Project-181717?style=flat-square&logo=github)](https://github.com/23DP1ELevsa/carObka) <br>
+  [![CarObka Website](https://img.shields.io/badge/CarObka%20Website-4285F4?logo=GoogleChrome&logoColor=white)](https://23dp1dbuko.github.io/carObka-website/) <br><br><br>
