@@ -21,17 +21,20 @@
         <span></span>
       </div>
       <div class="nav-links">
-        <a href="#hero">CarObka</a>
-        <a href="#info">Info</a>
-        <a href="#download">Download</a>
-        <a href="#how-to">How to</a>
+        <a class="hover-underline" href="#hero">CarObka</a>
+        <a class="hover-underline" href="#info">Info</a>
+        <a class="hover-underline" href="#download">Download</a>
+        <a class="hover-underline" href="#how-to">How to</a>
       </div>
     </nav>
   </header>
   
   <section id="hero">
     <div class="hover-left">
-      <h1>Hero section</h1>
+      <h1>CarObka — pārvaldi savu automašīnu kolekciju 
+        <span class="hover-underline">viegli</span> un 
+        <span class="hover-underline">efektīvi</span>!
+      </h1>
     </div>
     <div class="car-slides">
       <section class="heroslideshow-container">
@@ -134,14 +137,136 @@
       </div>
       <div class="section-text">
         <h1>Lietotāja ceļvedis</h1>
-        <p>Šajā sadaļā jābūt paskaidrojumam par to, kā lietot programmu. Tā kā tā ir konsoles lietotne, var iekļaut:</p>
-        <ul>
-          <li>Komandu sarakstu un to aprakstu (piemēram, add car, delete car, list cars)</li>
-          <li>Konsoles darbības piemēru</li>
-          <li>Instalēšanas ieteikumus, ja tas ir nepieciešams</li>
-        </ul>
+        <p>Šeit ir aprakstīta funkciju pieejamība, atkarība no lietotāja lomas programmā:</p>
+      </div>
+      <div class="function-block">
+        <div class="function-title">
+          <div><strong>Funkcijas</strong></div>
+          <div><strong>Non-user</strong></div>
+          <div><strong>User</strong></div>
+          <div><strong>Admin</strong></div>
+        </div>
+      
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Apskatīt automašīnu kolekciju</div>
+            <div class="tooltip">Šī funkcija ļauj apskatīt pievienoto automašīnu sarakstu lietotnē.</div>
+          </div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Detalizēta modeļu informācija tabulā</div>
+            <div class="tooltip">Šī funkcija sniedz detalizētu informāciju par automašīnu modeļiem tabulas formātā.</div>
+          </div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Kārtot automašīnas pēc kritērijiem</div>
+            <div class="tooltip">Šī funkcija ļauj kārtot automašīnas pēc dažādiem kritērijiem, piemēram, cenas vai modeļa.</div>
+          </div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Filtrēt automašīnas pēc parametriem</div>
+            <div class="tooltip">Šī funkcija ļauj filtrēt automašīnas pēc noteiktiem parametriem, piemēram, degvielas veida.</div>
+          </div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Apskatīt iemīļotās automašīnas</div>
+            <div class="tooltip">Šī funkcija ļauj apskatīt lietotāja iemīļoto automašīnu sarakstu.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Pievienot automašīnu iemīļotajām</div>
+            <div class="tooltip">Šī funkcija ļauj pievienot automašīnu lietotāja iemīļoto sarakstam.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Noņemt automašīnu no iemīļotajām</div>
+            <div class="tooltip">Šī funkcija ļauj noņemt automašīnu no lietotāja iemīļoto saraksta.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Nosūtīt atsauksmi, kļūdu vai ideju</div>
+            <div class="tooltip">Šī funkcija ļauj lietotājam nosūtīt atsauksmes vai idejas sistēmas uzturētājiem.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Apskatīt kontaktu ziņojumus</div>
+            <div class="tooltip">Šī funkcija ļauj administratoram apskatīt lietotāju nosūtītos ziņojumus.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Pievienot jaunu automašīnu</div>
+            <div class="tooltip">Šī funkcija ļauj administratoram pievienot jaunu automašīnu kolekcijai.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Dzēst automašīnu no kolekcijas</div>
+            <div class="tooltip">Šī funkcija ļauj administratoram dzēst automašīnu no kolekcijas.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Rediģēt esošās automašīnas datus</div>
+            <div class="tooltip">Šī funkcija ļauj administratoram rediģēt automašīnas informāciju.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
+        <div class="function">
+          <div class="con-tooltip">
+            <div>Dzēst lietotāja profilu</div>
+            <div class="tooltip">Šī funkcija ļauj administratoram dzēst lietotāja profilu no sistēmas.</div>
+          </div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/no-small.svg"></div>
+          <div><img src="src/images/yes-small.svg"></div>
+        </div>
       </div>
     </div>
+    
   </section>
   
   <hr>
