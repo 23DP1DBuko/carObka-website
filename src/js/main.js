@@ -49,4 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
       hamburger.classList.remove("active");
     }
   });
+
+  function updateTerminalText() {
+    const li = document.getElementById("terminal-text");
+    if (window.innerWidth <= 1225) {
+      li.textContent = "Atveriet terminālu un ievadiet komandas:";
+    } else {
+      li.textContent = "Atveriet terminālu un ievadiet komandas →";
+    }
+  }
+  // Initial call to set the text based on the current window size
+  window.addEventListener("load", updateTerminalText);
+  window.addEventListener("resize", updateTerminalText);
 });

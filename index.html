@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Audiowide&display=swap" rel="stylesheet" />
+
 </head>
 <body>
   <header>
@@ -67,12 +68,24 @@
         <img src="src/images/circle.svg" alt="Circle">
       </div>
       <div class="section-text">
-        <h1>Informācija par izstrādāto sistēmu</h1>
-        <p>Šajā sadaļā jāapraksta, kas ir šī programma. Tavā gadījumā tā ir konsoles Java lietotne automašīnu kolekcijas pārvaldīšanai, kur lietotāji var pierakstīties sistēmā un saglabāt savas iecienītākās automašīnas savā profilā. Šajā sadaļā var iekļaut: </p>
+        <h1>Kas ir CarObka?</h1>
+        <p>CarObka ir Java konsoles lietotne, kas paredzēta automašīnu entuziastiem, lai pārvaldītu savu iecienītāko automašīnu kolekciju, apskatītu detalizētu informāciju par transportlīdzekļiem un izmantotu praktiskus aprēķinus, kas palīdz izvēlēties izdevīgāko auto. </p>
+        <br>
+        <p style="color: #40685B; font-weight: 600;">Galvenās funkcijas:</p>
         <ul>
-          <li>Īss funkcionalitātes apraksts</li>
-          <li>Konsoles lietotnes ekrānuzņēmumi</li>
-          <li>Iespējamās priekšrocības salīdzinājumā ar analogiem</li>
+          <li>Automobiļu kataloga apskate</li>
+          <li>Iecienīto (favorītu) automobiļu pārvaldība</li>
+          <li>Lietotāja profils un reģistrācija</li>
+          <li>Informācijas filtrēšana un kārtošana</li>
+          <li>Degvielas aprēķini (cik km ar X litriem un otrādi)</li>
+          <li>Administratora funkcijas: automašīnu un lietotāju pārvaldība, datu rediģēšana</li>
+          <li>Ziņojumu un atsauksmju sūtīšana sistēmas uzturētājiem</li>
+        </ul>
+        <p style="color: #40685B; font-weight: 600;">Lietotāji tiek sadalīti trīs lomās:</p>
+        <ul>
+          <li>Viesis — var apskatīt datus, bet nespēj veikt izmaiņas</li>
+          <li>Reģistrēts lietotājs — var pārvaldīt favorītus, rakstīt ziņojumus</li>
+          <li>Administrators — pilna datu kontrole un pārvaldība</li>
         </ul>
       </div>
     </div>
@@ -84,14 +97,27 @@
         <img src="src/images/circle-download.svg" alt="Circle">
       </div>
       <div class="section-text">
-        <h1>Sistēmas lejupielādes adrese</h1>
-        <p>Šeit būs saite programmas lejupielādei. Ja programma vēl nav pieejama tiešsaistē (piemēram, GitHub vai Google Drive), var uzrakstīt "Drīzumā pieejams". Šajā sadaļā var iekļaut:</p>
-        <ul>  
-          <li>Pogu "Lejupielādēt"</li>
-          <li>Aprakstu par to, kas tieši tiks lejupielādēts (arhīvs ar .jar failu, avota kods utt.)</li>
-          <li>Sistēmas prasības (piemēram, nepieciešama Java 17)</li>
+        <h1>Kā lejupielādēt?</h1>
+        <div class="download-content">
+          <div class="steps">
+            <p style="font-weight: 600;">Lejupielādēšanas soļi:</p>
+            <ol>  
+              <li>Lejupielādējiet programmu caur mūsu vietni</li>
+              <li>Atveriet lejupielādēto zip-mapi</li>
+              <li>Izvelciet mapi savā datorā</li>
+              <li id="terminal-text">Atveriet terminālu un ievadiet komandas &#8594;</li>
+            </ol>
+          </div>
+          <div class="code-img">
+            <img src="src/images/code.png" alt="terminal">
+          </div>
+        </div>
+        <p style="font-weight: 600;">Sistēmas prasības:</p>
+        <ul>
+          <li>Java JDK 21 vai jaunāka versija (lejupielādei: <a href="https://adoptium.net/" target="_blank">Adoptium.net</a>)</li>
+          <li><a href="https://maven.apache.org/" target="_blank">Apache Maven</a></li>
+          <li>Windows terminālis ar UTF-8 atbalstu (CMD, PowerShell, Windows Terminal) vai Visual Studio Code</li>
         </ul>
-        
         <div class="download-button">
           <a href="https://github.com/23DP1ELevsa/carObka/archive/refs/heads/main.zip" download="file">
             <button onclick="download()">Download</button>

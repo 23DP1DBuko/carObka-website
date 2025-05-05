@@ -251,7 +251,7 @@ display: block;
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    padding: 70px 20px;
+    padding: 80px 20px;
     line-height: 1.5;
     font-size: 24px;
 }
@@ -260,6 +260,36 @@ display: block;
     padding: 0vh 0;   
     width: 100vw;
 }
+
+ul a {
+    text-decoration: none;
+    color: white
+}
+ul a:hover {
+    text-decoration: underline;
+}
+
+.download-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.steps {
+    flex: 1;
+    min-width: 250px;
+}
+
+.code-img {
+    flex: 1;
+    min-width: 250px;
+}
+.code-img img {
+    width: 100%;
+    max-width: 700px;
+}
+
 .download-button {
     display: flex;
     justify-content: flex-end;
@@ -323,7 +353,13 @@ footer p {
     align-items: center;
     margin: 0 10%;
 }
-
+@media (max-width: 1303px) {
+    .download-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+}
 /* for 1225px width and smaller */
 @media (max-width: 1225px) {
     .circle {
@@ -368,7 +404,6 @@ footer p {
         margin-top: 10vh;
         padding-bottom: 5vh;
     }
-
     #how-to h1 {
         font-size: 40px;
     }
