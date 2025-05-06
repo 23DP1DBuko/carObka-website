@@ -23,9 +23,9 @@ CarObka oficiālā tīmekļa vietne sniedz informāciju par mūsu konsoles lieto
 
 1. **Header** - Navigācijas josla ar logo un saites
 2. **Hero** - Ievada sadaļa ar galveno aicinājumu
-3. **Info** - Detalizēta informācija par programmas funkcijām
+3. **Info** - Informāciju par izstrādāto sistēmu ar mazu ievadu
 4. **Download** - Lejupielādes sadaļa ar instrukcijām
-5. **How-to** - Lietošanas pamācība ar ekrānuzņēmumiem
+5. **How-to** - Detalizēta informācija par programmas funkcijām
 6. **Footer** - Kontaktinformācija un saites
 
 ## 🛠 Instalācija
@@ -73,9 +73,9 @@ The official CarObka website provides information about our console-based car ma
 
 1. **Header** - Navigation bar with logo and links
 2. **Hero** - Introductory section with main call-to-action
-3. **Info** - Detailed information about program features
+3. **Info** - Information about developed system
 4. **Download** - Download section with instructions
-5. **How-to** - Usage guide with screenshots
+5. **How-to** - Detailed information about program features
 6. **Footer** - Contact information and links
 
 ## 🛠 Installation
