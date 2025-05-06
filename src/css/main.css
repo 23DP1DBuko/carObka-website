@@ -397,7 +397,7 @@ ul a:hover {
 
 .function-title, .function {
     display: grid;
-    grid-template-columns: 2fr minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr); /* Гибкие колонки */
+    grid-template-columns: 2fr minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
     grid-row-gap: 10px; 
@@ -505,11 +505,11 @@ footer p {
     margin: 0 10%;
 }
 .contact img {
-    transition: opacity 0.3s ease; /* Плавный переход при наведении */
+    transition: opacity 0.3s ease; 
 }
 
 .contact img:hover {
-    opacity: 0.7; /* Затемнение при наведении */
+    opacity: 0.7;
 }
 
 
@@ -676,17 +676,17 @@ footer p {
         font-size: 24px;
     }
     .function-block {
-        max-width: 80%; /* Увеличиваем ширину до 100% */
-        padding: 20px; /* Уменьшаем отступы */
+        max-width: 80%; 
+        padding: 20px; 
     }
 
     .function-title, .function {
-        grid-template-columns: 2fr repeat(3, minmax(80px, 1fr)); /* Уменьшаем минимальную ширину колонок */
-        grid-row-gap: 8px; /* Уменьшаем расстояние между строками */
+        grid-template-columns: 2fr repeat(3, minmax(80px, 1fr)); 
+        grid-row-gap: 8px; 
     }
 
     .function-title > div, .function div {
-        font-size: 16px; /* Уменьшаем размер текста */
+        font-size: 16px;
     }
     .tooltip {
         width: 200px;
@@ -762,21 +762,21 @@ footer p {
         padding-top: 0px;
     }
     .function-block {
-        padding: 10px; /* Ещё больше уменьшаем отступы */
+        padding: 10px; 
     }
 
     .function-title, .function {
-        grid-template-columns: 2fr repeat(3, minmax(60px, 1fr)); /* Ещё больше уменьшаем минимальную ширину колонок */
-        grid-row-gap: 6px; /* Уменьшаем расстояние между строками */
+        grid-template-columns: 2fr repeat(3, minmax(60px, 1fr)); 
+        grid-row-gap: 6px; 
     }
 
     .function-title > div, .function > div {
-        font-size: 14px; /* Ещё больше уменьшаем размер текста */
+        font-size: 14px; 
     }
 
     .function img {
-        width: 40%; /* Уменьшаем размер изображений */
-        margin: 0 auto; /* Центрируем изображения */
+        width: 40%; 
+        margin: 0 auto; 
     }
     .tooltip {
         width: 180px;

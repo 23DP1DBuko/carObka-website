@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelector(".nav-links");
 
   hamburger.addEventListener("click", (e) => {
-    e.stopPropagation(); // предотвращаем всплытие клика
+    e.stopPropagation();
     hamburger.classList.toggle("active");
     navLinks.classList.toggle("active");
   });
