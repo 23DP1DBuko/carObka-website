@@ -40,7 +40,7 @@ CarObka oficiālā tīmekļa vietne sniedz informāciju par mūsu konsoles lieto
    ```bash
    cd folder\path
    chcp 65001
-   mvn compile exec:java
+   java -jar target/carobka.jar
    ```
    ![Terminal](src/images/download-step4.png)
 
@@ -90,7 +90,7 @@ The official CarObka website provides information about our console-based car ma
    ```bash
    cd folder\path
    chcp 65001
-   mvn compile exec:java
+   java -jar target/carobka.jar
    ```
    ![Terminal](src/images/download-step4.png)
 
